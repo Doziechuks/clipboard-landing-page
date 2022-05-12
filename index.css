@@ -286,5 +286,10 @@ html {
   .inner-left img {
     margin-right: 0;
   }
+}
 
+@media screen and (max-width: 480px) {
+  .company-logo {
+    flex-direction: column;
+  }
 }
