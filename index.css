@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: black;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* li {
+  list-style: none;
+}
+
+.body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 6em;
+  font-family: 'Bai Jamjuree', sans-serif;
+  overflow-x: hidden;
+}
+
+.bg-header-desktop {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 18em;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 72em;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6em;
+  margin-bottom: 6em;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  max-width: 36em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1em;
+}
+
+.header img {
+  width: 6em;
+  margin-bottom: 4em;
+}
+
+.header h1 {
+  margin-bottom: 0.5em;
+}
+
+.header p {
+  margin-bottom: 1em;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.btn-container button {
+  padding: 0.75em 2em;
+  border-radius: 2em;
+  font-size: 1rem;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section .header {
+  margin-bottom: 4em;
+}
+
+.image-text-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3em;
+}
+
+.section-image {
+  width: 100%;
+  max-width: 38em;
+  transform: translateX(-4em);
+}
+
+.section-image._2 {
+  max-width: 46em;
+  transform: translateX(0);
+}
+
+.text-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.text- h3 {
+  margin-bottom: 0.5em;
+}
+
+.text- p {
+  line-height: 1.4em;
+}
+
+.workflow-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.workflow {
+  flex: 30%;
+  text-align: center;
+}
+
+.workflow img {
+  width: 2em;
+  margin-bottom: 1.5em;
+}
+
+.workflow h3 {
+  margin-bottom: 1em;
+}
+
+.workflow p {
+  line-height: 1.4em;
+}
+
+.company-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4em;
+}
+
+.section .header:last-child {
+  margin-bottom: 0;
+}
+
+.footer {
+  width: 100%;
+  padding: 4em 0;
+  background: hsl(202, 17%, 87%);
+}
+
+.footer-wrapper {
+  width: 100%;
+  max-width: 72em;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inner-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6em;
+  flex-wrap: wrap;
+}
+
+.inner-left img {
+  width: 3em;
+  margin-right: 3em;
+}
+
+.inner-left>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+  align-self: flex-start;
+}
+
+.inner-left>div:nth-child(2) {
+  margin-right: 2em;
+}
+
+.inner-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 2em;
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+
+  .btn-container button {
+    width: 100%;
+  }
+
+  .image-text-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-image {
+    transform: translateX(0);
+  }
+
+  .text- {
+    width: 100%;
+    text-align: center;
+  }
+
+  .workflow-container {
+    flex-direction: column;
+  }
+
+  .workflow {
+    width: 100%;
+  }
+
+  .company-logo {
+    justify-content: center;
+  }
+
+  .footer {
+    padding: 3em;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .inner-left {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .inner-left>div {
+    align-self: unset;
+    align-items: center;
+  }
+
+  .inner-left>div:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .inner-left img {
+    margin-right: 0;
+  }
+
+}
